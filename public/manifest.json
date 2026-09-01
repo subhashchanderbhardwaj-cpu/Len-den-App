@@ -1,0 +1,48 @@
+{
+  "name": "Len Den Mobile Khata - लेन-देन खाता",
+  "short_name": "Len Den Khata",
+  "description": "पर्सनल लेन-देन एकाउंटिंग व मोबाइल खाता बही (Personal Accounting & Digital Khata Book)",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#0f172a",
+  "theme_color": "#1d4ed8",
+  "orientation": "portrait",
+  "categories": ["finance", "business", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512 any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "नया लेन-देन (+ New Entry)",
+      "short_name": "New Entry",
+      "description": "नया लेन-देन दर्ज करें",
+      "url": "/?action=new_txn"
+    },
+    {
+      "name": "पासबुक (Passbook)",
+      "short_name": "Passbook",
+      "description": "समस्त लेन-देन पासबुक देखें",
+      "url": "/?tab=passbook"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Len Den Mobile Khata",
+  "description": "A modern mobile personal accounting and ledger app (लेन-देन खाता) installable on Android phones as a native PWA with offline caching, Google Account Sign-In, automatic Google Sheet digital bahi-khata synchronization, dual Hindi/English support, passbook statements, WhatsApp reminders, and PDF export.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

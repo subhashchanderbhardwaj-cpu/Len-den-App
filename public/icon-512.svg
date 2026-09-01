@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow512" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad512)" />
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4" />
+
+  <g filter="url(#shadow512)" transform="translate(40, 30)">
+    <rect x="60" y="70" width="312" height="340" rx="24" fill="#ffffff" />
+    <rect x="60" y="70" width="44" height="340" rx="12" fill="url(#goldGrad512)" />
+    
+    <rect x="130" y="130" width="210" height="12" rx="6" fill="#e2e8f0" />
+    <rect x="130" y="170" width="160" height="12" rx="6" fill="#e2e8f0" />
+    <rect x="130" y="210" width="190" height="12" rx="6" fill="#e2e8f0" />
+    <rect x="130" y="250" width="140" height="12" rx="6" fill="#e2e8f0" />
+
+    <rect x="130" y="300" width="90" height="40" rx="12" fill="url(#emeraldGrad512)" />
+    <text x="175" y="326" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="20" text-anchor="middle">CR +</text>
+    
+    <rect x="235" y="300" width="90" height="40" rx="12" fill="#ef4444" />
+    <text x="280" y="326" fill="#ffffff" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="20" text-anchor="middle">DR -</text>
+  </g>
+
+  <g filter="url(#shadow512)" transform="translate(290, 270)">
+    <circle cx="90" cy="90" r="85" fill="url(#goldGrad512)" />
+    <circle cx="90" cy="90" r="75" fill="#1e293b" />
+    <text x="90" y="125" fill="#fcd34d" font-family="-apple-system, system-ui, sans-serif" font-weight="900" font-size="105" text-anchor="middle">₹</text>
+  </g>
+</svg>
