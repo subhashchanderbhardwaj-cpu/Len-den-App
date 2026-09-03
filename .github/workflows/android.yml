@@ -8,19 +8,26 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: set up JDK 11
+    
+    - name: set up JDK 17 # Updated to JDK 17 (Change back to 11 if you are using an older Gradle version)
       uses: actions/setup-java@v4
       with:
-        java-version: '11'
+        java-version: '17' 
         distribution: 'temurin'
         cache: gradle
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
+      
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug # Specifically builds the debug APK
+      
+    - name: Upload APK # This step saves the APK so you can download it
+      uses: actions/upload-artifact@v4
+      with:
+        name: app-debug
+        path: app/build/outputs/apk/debug/app-debug.apk
